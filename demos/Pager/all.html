@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="Pager 组件quickStart">
+		<title>分页组件quickStart</title>
+		<script type="text/javascript" src="t.js"></script>
+		<!-- <link rel="stylesheet" type="text/css" href="../../resources/default/common/common.css">
+		<link rel="stylesheet" type="text/css" href="../../resources/default/magic.Pager/magic.Pager.css"> -->
+		<link rel="stylesheet" href="../../resources/import.php?components=magic.Pager&skins=blue,default,black" />
+		<script type="text/javascript" src="../../src/import.php?f=magic.Pager"></script>
+	</head>
+	<body>
+		<div id="magic-pager2" class=""></div>
+		<div id="magic-pager1" class="tang-blue"></div>
+		<div id="magic-pager3" class="tang-black"></div>
+		<script type="text/javascript">
+		var pager1 = new magic.Pager({'currentPage' : 1, 'totalPage' : 8});
+		pager1.render('magic-pager1');
+		pager1.on('pagechange', function(evt) {
+			baidu.event(evt).preventDefault();
+		});
+		
+		var pager2 = new magic.Pager({'currentPage' : 1, 'totalPage' : 8});
+		pager2.render('magic-pager2');
+		pager2.on('pagechange', function(evt) {
+			baidu.event(evt).preventDefault();
+		});
+		
+		var pager3 = new magic.Pager({'currentPage' : 1, 'totalPage' : 8});
+        pager3.render('magic-pager3');
+        pager3.on('pagechange', function(evt) {
+            baidu.event(evt).preventDefault();
+        });
+		</script>
+	</body>
+</html>

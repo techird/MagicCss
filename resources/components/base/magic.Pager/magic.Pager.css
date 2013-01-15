@@ -1,0 +1,50 @@
+/** @import units: [btn,   xssg   , dfg5, dfg] **/
+.tang-pager {
+	font-size : 13px;
+	font-family : arial;
+	margin:10px;
+}
+.tang-pager-main{
+    padding:20px;
+}
+.tang-pager .tang-pager-first,
+.tang-pager .tang-pager-previous,
+.tang-pager .tang-pager-normal,
+.tang-pager .tang-pager-current,
+.tang-pager .tang-pager-next,
+.tang-pager .tang-pager-last {
+    margin-right:10px;
+    text-align:center;
+}
+
+.tang-pager .tang-pager-first,
+.tang-pager .tang-pager-previous,
+.tang-pager .tang-pager-normal,
+.tang-pager .tang-pager-next,
+.tang-pager .tang-pager-last {
+
+}
+
+.tang-pager .tang-pager-first,
+.tang-pager .tang-pager-previous,
+.tang-pager .tang-pager-next,
+.tang-pager .tang-pager-last {
+
+}
+
+.tang-pager .tang-pager-normal, 
+.tang-pager .tang-pager-current {
+
+}
+
+.tang-pager .tang-pager-first:hover,
+.tang-pager .tang-pager-previous:hover,
+.tang-pager .tang-pager-normal:hover,
+.tang-pager .tang-pager-next:hover,
+.tang-pager .tang-pager-last:hover {
+
+}
+
+.tang-pager .tang-pager-current {
+
+}

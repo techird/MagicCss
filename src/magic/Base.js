@@ -1,0 +1,108 @@
+/*
+ * Tangram
+ * Copyright 2009 Baidu Inc. All rights reserved.
+ * 
+ * path: baidu/lang/Class.js
+ * author: meizz, erik
+ * version: 2.0
+ * date: 2011/11/24
+ */
+
+///import magic;
+///import baidu.lang.Class;
+///import baidu.lang.Event;
+///import baidu.lang.inherits;
+///import baidu.lang.isString;
+///import baidu.lang.Class.$removeEventListener;
+
+/**
+ * UI基类，所有的UI都应该从这个类中派生出去
+ * @class
+ * @name magic.Base
+ * @grammar new magic.Base()
+ * @return {magic.Base}
+ * @author meizz
+ */
+magic.Base = function(){
+    baidu.lang.Class.call(this);
+
+    this._ids = {};
+    this._eid = this.guid +"__";
+}
+baidu.lang.inherits(magic.Base, baidu.lang.Class, "magic.Base").extend(
+/** @lends magic.Base.prototype */
+{
+    /**
+     * @description 取得 ui 模块对应的 dom element 对象
+     * @name magic.Base#getElement
+     * @function
+     * @grammar magic.Base#getElement(id)
+     * @param   {String}    key     该ID对应的关键字(可选参数)
+     * @return  {Object}    ui模块对应的dom element
+     */
+    getElement : function(id) {
+        return document.getElementById(this.$getId(id));
+    },
+
+    /**
+     * @description 取得所有 ui 模块对应的 dom element 对象
+     * @name magic.Base#getElements
+     * @function
+     * @grammar magic.Base#getElements()
+     * @return  {Object}    取得对象的集合
+     */
+    getElements: function(){
+        var result = {};
+        var _ids = this._ids;
+        for(var key in _ids)
+            result[key] = this.getElement(key);
+        return result;
+    },
+
+    /**
+     * @description 取得一个页面唯一的 id
+     * @name magic.Base#$getId
+     * @function
+     * @grammar magic.Base#$getId(key)
+     * @param   {String}    key     该ID对应的关键字(可选参数)
+     * @return  {String}            页面唯一的 id，可以作为DOM元素的id
+     */
+    $getId : function(key) {
+        key = baidu.lang.isString(key) ? key : "";
+        // 2012-3-23: 使 _ids 存入所以可能被建立映射的 key
+        return this._ids[key] || (this._ids[key] = this._eid + key);
+    }
+
+    /**
+     * @description 这是一个针对 setup 反向创建对象的特有方法，将类里key与DOM建立映射
+     * @name magic.Base#$mappingDom
+     * @function
+     * @grammar magic.Base#$mappingDom(key, dom)
+     * @param   {String}    key 自定义一个名称用来与DOM对象建立映射关系
+     * @param   {HTMLElement | String}  dom 被映射的DOM对象
+     */
+    ,$mappingDom : function(key, dom){
+        if (baidu.lang.isString(dom)) {
+            this._ids[key] = dom;
+        } else if (dom && dom.nodeType) {
+            dom.id ? this._ids[key] = dom.id : dom.id = this.$getId(key);
+        }
+        return this;
+    }
+
+    /**
+     * @description 析构函数，在析构时派发析构事件
+     * @name magic.Base#$dispose
+     * @function
+     * @grammar magic.Base#$dispose()
+     */
+    ,$dispose : function() {
+        this.fire("ondispose") && baidu.lang.Class.prototype.dispose.call(this);
+    }
+});
+
+//  20120110    meizz   简化eid去掉其中的__type部分；事件派发使用fire方法替换原来 dispatchEvent
+//  20111129    meizz   实例化效率大比拼
+//                      new ui.Base()           效率为 1
+//                      new ui.control.Layer()  效率为 2
+//                      new ui.Dialog()         效率为 3.5
