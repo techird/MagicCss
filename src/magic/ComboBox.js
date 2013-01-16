@@ -81,7 +81,7 @@ magic.ComboBox = baidu.lang.createClass(function(options) {
             '<input id="' + this.$getId('input') + '" class="magic-combobox-input"' + (this._options.readonly ? 'readonly' : '') + '>',
             '</div>',
             '</div>',
-            '<a href="#" id="' + this.$getId('arrow') + '" class="magic-combobox-arrow" onclick="return false"></a>',
+            '<a href="#" id="' + this.$getId('arrow') + '" class="mg-icon mg-icon-chevron-down" onclick="return false"></a>',
             '</div>',
             '</div>'
         ].join('');
@@ -93,7 +93,7 @@ magic.ComboBox = baidu.lang.createClass(function(options) {
      * @return {String} 下拉菜单的壳子生成的HTMLString
      */
     '_menuContainerToHTMLString' : function() {
-        return '<ul id="' + this.$getId('menu') + '" class="magic-combobox-menu"></ul>';
+        return '<ul id="' + this.$getId('menu') + '" class="magic-combobox-menu mg-dropdown"></ul>';
     },
     
     /**
@@ -104,7 +104,7 @@ magic.ComboBox = baidu.lang.createClass(function(options) {
     '$menuContentToHTMLString' : function(items) {
         var HTMLString = [];
         baidu.array(items).each(function(index, item) {
-            HTMLString.push('<li data-index="' + index + '" data-value="' + items[index].value + '" class="magic-combobox-menu-item">' + items[index].content + '</li>');
+            HTMLString.push('<li data-index="' + index + '" data-value="' + items[index].value + '" class="magic-combobox-menu-item mg-dropdown-item">' + items[index].content + '</li>');
         });
         return HTMLString.join('');
     },

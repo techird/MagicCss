@@ -1,1 +1,25 @@
-*{margin:0; padding:0}
+/**
+ * magic reset.css
+ */
+
+ div,
+ ul,  ol,  li,
+ h1,  h2,  h3,  h4,  h5,  h6,
+ form,  input,  textarea,  p,  th,  td{
+    margin: 0;
+    padding: 0;
+}
+
+ {
+    border: 0;
+}
+
+ li{
+    list-style: none;
+}
+
+ input,  textarea,  select{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}

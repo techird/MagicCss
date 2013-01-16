@@ -591,6 +591,7 @@ magic.control.ComboBox = baidu.lang.createClass(function(options) {
      * @param {Node} elmItem 待高亮的dom节点
      */
     '$highlight' : function(elmItem) {
+        baidu(elmItem).addClass('mg-selected');
         baidu(elmItem).addClass('magic-combobox-menu-item-hover');
         var index = baidu(elmItem).attr('data-index');
        /**
@@ -629,6 +630,7 @@ magic.control.ComboBox = baidu.lang.createClass(function(options) {
     '$clearHighlight' : function() {
         var elmMenuItems = baidu('.magic-combobox-menu-item', this.getElement('menu'));
         elmMenuItems.removeClass('magic-combobox-menu-item-hover');
+        elmMenuItems.removeClass('mg-selected');
     },
     
     /**

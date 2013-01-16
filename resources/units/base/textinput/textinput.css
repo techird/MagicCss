@@ -1,0 +1,20 @@
+.mg-textinput {
+    display: inline-block;
+    padding: 4px 6px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    vertical-align: middle;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+.mg-textinput:focus {
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+}

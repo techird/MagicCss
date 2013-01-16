@@ -1,4 +1,4 @@
-.tang-unit-btn {
+.mg-btn {
     color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     background-color: #006dcc;
@@ -14,11 +14,11 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-.tang-unit-btn:hover, .tang-unit-btn:active, .tang-unit-btn.active{
+.mg-btn:hover, .mg-btn:active, .mg-btn.active{
     color: #ffffff;
     background-color: #0044cc;
     *background-color: #003bb3;
 }
-.tang-unit-btn:active, .tang-unit-btn.active {
+.mg-btn:active, .mg-btn.active {
     background-color: #003399 \9;
 }

@@ -112,7 +112,7 @@ magic.Pager = baidu.lang.createClass(function(options) {
      * @return {String} 拼装后的链接HTMLString
      */
     '_buildLink' : function(pageNum, className, innerHTML) {
-        return '<a onclick="return baiduInstance(\'' + this.guid + '\').$update(' + pageNum + ')" href="' + baidu.string.format(this.tplURL, {'pageNum' : pageNum}) + '" class="tang-pager-' + className + ' tang-unit-btn">'+ innerHTML + '</a>';
+        return '<a onclick="return baiduInstance(\'' + this.guid + '\').$update(' + pageNum + ')" href="' + baidu.string.format(this.tplURL, {'pageNum' : pageNum}) + '" class="tang-pager-' + className + ' mg-btn">'+ innerHTML + '</a>';
     },
     
     /**

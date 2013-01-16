@@ -1,0 +1,28 @@
+.mg-icon {
+    background: url(../resources/units/default/img/icon.gif) no-repeat;
+}
+.mg-icon-glass {
+    background-position: 0 0;
+}
+.mg-icon-music {
+    background-position: -24px 0;
+}
+.mg-icon-search {
+    background-position: -48px 0;
+}
+.mg-icon-envelope {
+    background-position: -72px 0;
+}
+.mg-icon-heart {
+    background-position: -96px 0;
+}
+.mg-icon-star {
+    background-position: -120px 0;
+}
+.mg-icon-chevron-up {
+  background-position: -288px -120px;
+}
+
+.mg-icon-chevron-down {
+  background-position: -313px -119px;
+}
