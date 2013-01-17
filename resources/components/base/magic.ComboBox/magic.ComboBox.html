@@ -1,23 +1,32 @@
-<div class="mg-combobox" style="width:200px;">
-    <div class="magic-combobox">
-        <input class="magic-combobox-input" />
+<style>
+    .mg-combobox{
+        width: 300px;
+    }
+</style>
+<h2>组合框组件</h2>
+<p>在原生select下拉控件上增加可编辑选中内容的功能 </p>
+<!-- tpl start -->
+<div class="mg-combobox">
+    <div class="mg-combobox-container">
+        <input class="mg-combobox-input" />
         <a onclick="return false" class="mg-icon mg-icon-chevron-down" href="#"></a>
     </div>
-    <ul class="magic-combobox-menu mg-dropdown mg-shadow">
-        <li class="magic-combobox-menu-item mg-dropdown-item">
+    <ul class="mg-combobox-menu mg-dropdown mg-shadow">
+        <li class="mg-combobox-menu-item mg-dropdown-item">
             北京
         </li>
-        <li class="magic-combobox-menu-item mg-dropdown-item">
+        <li class="mg-combobox-menu-item mg-dropdown-item">
             上海
         </li>
-        <li class="magic-combobox-menu-item mg-dropdown-item mg-selected">
+        <li class="mg-combobox-menu-item mg-dropdown-item mg-selected">
             天津
         </li>
-        <li class="magic-combobox-menu-item mg-dropdown-item">
+        <li class="mg-combobox-menu-item mg-dropdown-item">
             重庆
         </li>
-        <li class="magic-combobox-menu-item mg-dropdown-item">
+        <li class="mg-combobox-menu-item mg-dropdown-item">
             广州
         </li>
     </ul>
 </div>
+<!-- tpl end -->

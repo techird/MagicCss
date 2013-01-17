@@ -1,0 +1,71 @@
+.mg-scrollpanel{
+    overflow:hidden;
+}
+.mg-scrollpanel .mg-scrollpanel-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.mg-scrollpanel .mg-scrollpanel-content{
+    position: absolute;
+    left:0;
+    top:0;
+}
+/** slider */
+.mg-scrollpanel .mg-slider {
+    font-size: 0;
+    position:absolute;
+    top:0;
+    right:0;
+    background:url(bg.gif) repeat-y -18px 0;
+}
+.mg-scrollpanel .mg-slider .mg-inner {
+    position: relative;
+}
+
+.mg-scrollpanel .mg-slider-vtl {
+    height: 100%;
+}
+.mg-scrollpanel .mg-slider-vtl .mg-view {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    *height: 100%;
+}
+.mg-scrollpanel .mg-slider-vtl .mg-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+.mg-scrollpanel .mg-slider-vtl .mg-inner {
+    display:none;
+}
+
+.mg-scrollpanel .mg-slider-vtl .mg-corner {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+}
+.mg-scrollpanel .mg-slider-vtl .mg-start {
+    left: 0;
+    top:0;
+}
+.mg-scrollpanel .mg-slider-vtl .mg-last {
+    left: 0;
+    bottom:0;
+}
+
+/** 游标 */
+.mg-scrollpanel .mg-slider .mg-knob {
+    position: absolute;
+    display: block;
+    height: 16px;
+    width: 16px;
+    border:1px solid #d2d2d3;
+    outline: none;
+    z-index: 10;
+    cursor: default;
+}
+.mg-scrollpanel .mg-slider-vtl .mg-knob {
+    background:#fff;
+}
