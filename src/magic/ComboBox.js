@@ -93,7 +93,7 @@ magic.ComboBox = baidu.lang.createClass(function(options) {
      * @return {String} 下拉菜单的壳子生成的HTMLString
      */
     '_menuContainerToHTMLString' : function() {
-        return '<ul id="' + this.$getId('menu') + '" class="magic-combobox-menu mg-dropdown"></ul>';
+        return '<ul id="' + this.$getId('menu') + '" class="magic-combobox-menu mg-dropdown mg-shadow"></ul>';
     },
     
     /**

@@ -81,7 +81,7 @@ magic.Calendar.extend(
     /**
      * 日历骨架模板
      */
-    tplSkeleton: '<div id="#{calendarId}" class="#{calendarClass}"><div id="#{titleId}" class="#{titleClass}"></div><div id="#{tableId}" class="#{tableClass}"></div><div id="#{footerId}" class="#{footerClass}"></div></div>',
+    tplSkeleton: '<div id="#{calendarId}" class="#{calendarClass} mg-shadow"><div id="#{titleId}" class="#{titleClass} mg-title"></div><div id="#{tableId}" class="#{tableClass}"></div><div id="#{footerId}" class="#{footerClass}"></div></div>',
     
     /**
      * 日期单元格模板
