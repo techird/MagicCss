@@ -1,23 +1,48 @@
-<div class="mg-combobox" style="width:200px;">
-    <div class="magic-combobox">
-        <input class="magic-combobox-input" />
-        <a onclick="return false" class="mg-icon mg-icon-chevron-down" href="#"></a>
+<h1>输入框提示组件</h1>
+<p>根据输入框的内容在其下方通过弹出层的方式展示建议数据，多用于搜索引擎的搜索框。</p>
+<style type="text/css">
+    .demo-suggestion .mg-textinput {
+        width: 500px;
+        padding: 0;
+        height: 2em;
+        margin: 5px 0 0;
+    }
+    .demo-suggestion .mg-suggestion {
+        width: 502px;
+        margin-top: -3px;
+    }
+    .demo-suggestion .mg-suggestion .mg-dropdown-item:hover {
+        color: #ffffff;
+        background-color: #0081c2;
+        background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+        background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+        background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+        background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+    }
+</style>
+
+<div class="demo-suggestion">
+<!-- tpl start -->
+    <input type="text" class="mg-textinput" placeholder="请输入搜索关键字" />
+    <div class="mg-suggestion">
+        <ul class="mg-suggestion-menu mg-dropdown mg-shadow">
+            <li class="mg-suggestion-menu-item mg-dropdown-item">
+                北京
+            </li>
+            <li class="mg-suggestion-menu-item mg-dropdown-item">
+                上海
+            </li>
+            <li class="mg-suggestion-menu-item mg-dropdown-item mg-selected">
+                天津
+            </li>
+            <li class="mg-suggestion-menu-item mg-dropdown-item">
+                重庆
+            </li>
+            <li class="mg-suggestion-menu-item mg-dropdown-item">
+                广州
+            </li>
+        </ul>
     </div>
-    <ul class="magic-combobox-menu mg-dropdown mg-shadow">
-        <li class="magic-combobox-menu-item mg-dropdown-item">
-            北京
-        </li>
-        <li class="magic-combobox-menu-item mg-dropdown-item">
-            上海
-        </li>
-        <li class="magic-combobox-menu-item mg-dropdown-item mg-selected">
-            天津
-        </li>
-        <li class="magic-combobox-menu-item mg-dropdown-item">
-            重庆
-        </li>
-        <li class="magic-combobox-menu-item mg-dropdown-item">
-            广州
-        </li>
-    </ul>
+<!-- tpl end -->
 </div>
