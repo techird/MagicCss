@@ -7,8 +7,11 @@
 
     function get_dpl_name($content){
         preg_match('/<h2>(.*)<\/h2>/', $content, $match);
-
-        return $match[1];
+        if(!$match){
+            return '';
+        }else{
+            return $match[1];
+        }
     }
 
     function content_to_source($content){
@@ -26,7 +29,11 @@
     function content_to_tpl($content){
         preg_match('/<!--\s*tpl\s*start\s*-->([\s\S]*)<!--\s*tpl\s*end\s*-->/', $content, $match);
 
-        return $match[1];
+        if(!$match){
+            return '';
+        }else{
+            return $match[1];
+        }
     }
 
     $dpls = array();
