@@ -1,0 +1,13 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Microsoft Yahei';
+    font-size: 13px;
+}
+th {
+    text-align: left;
+    border-bottom: 1px solid #999;
+}
+th, td {    
+    padding: 3px;
+}

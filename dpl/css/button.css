@@ -1,0 +1,31 @@
+button {
+    color: #DDD;
+    background-color: black;
+    padding: 5px 10px;
+    text-align: center;
+    min-width: 60px;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: inset 0 1px #999, inset 0 15px rgba(255,255,255,.2), 0 2px 2px #888;
+    font-family: 'Microsoft Yahei';
+    -webkit-transition: all ease .25s;
+    -moz-transition: all ease .25s; 
+    -ms-transition: all ease .25s;
+    transition: all ease .25s;
+}
+button:hover {
+    color: white;
+    text-shadow: 0 0 3px white;
+    background-color: #0A40EB;
+    border-color: #0037AD;
+    box-shadow: inset 0 1px #86B6FF, inset 0 15px rgba(255,255,255,.3), 0 2px 2px #799EC5;
+}
+button:active {
+    background-color: #1336A2;
+    border-color: #0037AD;
+    box-shadow: inset 0 1px 1px #042A8B, inset 0 15px rgba(255, 255, 255, .15), 0 2px 2px #799EC5;
+    -webkit-transition: all ease .1s;
+    -moz-transition: all ease .1s;  
+    -ms-transition: all ease .1s;
+    transition: all ease .1s;
+}
