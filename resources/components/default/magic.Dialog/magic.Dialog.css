@@ -4,13 +4,6 @@
     background: url(./components/default/magic.Dialog/dialog.png) repeat-x transparent;
 }
 .mg-dialog .mg-title .close-btn {
-    position: absolute;
-    right: 5px;
-    top: 0;
-    display: block;
-    width: 29px;
-    height: 29px;
-    outline: none;
     background: url(./components/default/magic.Dialog/btns.gif) no-repeat transparent;
 }
 .mg-dialog .mg-title a.close-btn:hover{
