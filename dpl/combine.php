@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
     $units_base = '../resources/units/base/';
     $components_base = '../resources/components/base/';
