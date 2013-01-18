@@ -1,0 +1,64 @@
+<style>
+    .mg-scrollpanel{
+        height:280px;
+        width:150px;
+    }
+    #target-content p{
+        line-height:30px;
+        padding:20px 0;
+    }
+    #mg-scrollpanel-demo .mg-scrollpanel-wrapper{
+        width: 150px;
+        height: 280px;
+    }
+    #mg-scrollpanel-demo .mg-scrollpanel-content{
+        width: 150px;
+    }
+    #mg-scrollpanel-demo .mg-slider{
+        height: 280px;
+        width: 18px;
+    }
+    #mg-scrollpanel-demo .mg-view{
+        width: 18px;
+        top: 18px;
+        height: 208px;
+    }
+    #mg-scrollpanel-demo .mg-knob{
+        top: 0%;
+        height: 34px;
+    }
+</style>
+<h2>滚动条组件</h2>
+<p>用以替代系统默认滚动条的组件</p>
+<!-- demo start -->
+<div id="mg-scrollpanel-demo">
+    <!-- tpl start -->
+    <div class="target mg-scrollpanel">
+        <div class="mg-scrollpanel-wrapper">
+            <div class="mg-scrollpanel-content">
+                <div id="target-content">
+                    <p>Contents Here</p>
+                    <p>Contents Here</p>
+                    <p>Contents Here</p>
+                    <p>Contents Here</p>
+                    <p>Contents Here</p>
+                    <p>Contents Here</p>
+                    <p>Contents Here</p>
+                    <p>Contents Here</p>
+                    <p>Contents Here</p>
+                    <p>Contents Here</p>
+                </div>
+            </div>
+            <div style="" class="mg-ui mg-slider mg-slider-vtl">
+                <div class="mg-view">
+                    <div class="mg-content"></div>
+                    <a class="mg-knob" href="javascript:;"></a>
+                </div>
+                <div class="mg-corner mg-start"></div>
+                <div class="mg-corner mg-last"></div>
+            </div>
+        </div>
+    </div>
+    <!-- tpl end -->
+</div>
+<!-- demo end -->

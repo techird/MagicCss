@@ -32,7 +32,7 @@
                 border: 1px dotted #76A2FF;
                 margin: 20px;
             }
-            #wrapper .item h2 {
+            #wrapper .item-heading {
                 font-size: 18px;
                 padding-bottom: 10px;
                 color: #1581A4;
@@ -48,7 +48,7 @@
                 foreach($fileList as $name => $filePath){
                 ?>
                 <div class="item">
-                    <h2><?php echo $name ?></h2>
+                    <h2 class="item-heading"><?php echo $name ?></h2>
                     <?php echo file_get_contents($filePath) ?>
                 </div>
                 <?php

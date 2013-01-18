@@ -20,9 +20,29 @@
     background-position: -120px 0;
 }
 .mg-icon-chevron-up {
-  background-position: -288px -120px;
+    background-position: -288px -120px;
 }
-
 .mg-icon-chevron-down {
-  background-position: -313px -119px;
+    background-position: -313px -119px;
+}
+.mg-icon-chevron-left {
+    background-position: -432px -72px;
+}
+.mg-icon-chevron-right {
+    background-position: -456px -72px;
+}
+.mg-icon-backward {
+    background-position: -240px -72px;
+}
+.mg-icon-forward {
+    background-position: -336px -72px;
+}
+.mg-icon-arrow-up {
+  background-position: -289px -96px;
+}
+.mg-icon-arrow-down {
+  background-position: -312px -96px;
+}
+.mg-icon-remove {
+  background-position: -312px 0;
 }

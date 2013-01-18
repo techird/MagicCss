@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
     $units_base = '../resources/units/base/';
     $components_base = '../resources/components/base/';
@@ -7,8 +7,11 @@
 
     function get_dpl_name($content){
         preg_match('/<h2>(.*)<\/h2>/', $content, $match);
-
-        return $match[1];
+        if(!$match){
+            return '';
+        }else{
+            return $match[1];
+        }
     }
 
     function content_to_source($content){
@@ -26,7 +29,11 @@
     function content_to_tpl($content){
         preg_match('/<!--\s*tpl\s*start\s*-->([\s\S]*)<!--\s*tpl\s*end\s*-->/', $content, $match);
 
-        return $match[1];
+        if(!$match){
+            return '';
+        }else{
+            return $match[1];
+        }
     }
 
     $dpls = array();
@@ -59,9 +66,10 @@
     <script type="text/javascript" src="pretty/prettify.js"></script>
     <link rel="stylesheet" href="pretty/prettify.css">
     <script type="text/javascript" src="CssShare.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="CssShare.css" />
     <link rel="stylesheet" href="../resources/importUnits.php?units=textinput,button,title,dropdown,icon&skins=default" />
-    <link rel="stylesheet" href="../resources/import.php?components=magic.ComboBox,magic.DatePicker,magic.Dialog,magic.Pager,magic.Suggestion,&skins=default" />
+    <link rel="stylesheet" href="../resources/import.php?components=magic.Carousel,magic.ComboBox,magic.DatePicker,magic.Dialog,magic.Pager,magic.ScrollPanel,magic.Suggestion,magic.Tooltip,&skins=default" />
     <link rel="stylesheet" href="../resources/units/default/common.css" />
 </head>
 <body>

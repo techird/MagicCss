@@ -1,15 +1,15 @@
 /** @import units: [button,   xssg   , dfg5, dfg] **/
-.tang-pager {
+.mg-pager {
 	font-size : 13px;
 	font-family : arial;
 	margin:10px;
 }
-.tang-pager .tang-pager-first,
-.tang-pager .tang-pager-previous,
-.tang-pager .tang-pager-normal,
-.tang-pager .tang-pager-current,
-.tang-pager .tang-pager-next,
-.tang-pager .tang-pager-last {
+.mg-pager .mg-pager-first,
+.mg-pager .mg-pager-previous,
+.mg-pager .mg-pager-normal,
+.mg-pager .mg-pager-current,
+.mg-pager .mg-pager-next,
+.mg-pager .mg-pager-last {
     margin-right:10px;
     text-align:center;
 }
