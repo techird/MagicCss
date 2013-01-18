@@ -40,7 +40,9 @@
 .mg-icon-arrow-up {
   background-position: -289px -96px;
 }
-
 .mg-icon-arrow-down {
   background-position: -312px -96px;
+}
+.mg-icon-remove {
+  background-position: -312px 0;
 }

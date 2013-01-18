@@ -6,6 +6,8 @@
 .mg-dialog .mg-title {
     position: relative;
     border: none;
+    _display: inline-block;
+    _line-height: 30px;
 }
 .mg-dialog .mg-title-dragable {
     cursor: move;
@@ -13,10 +15,8 @@
 .mg-dialog .mg-title .close-btn {
     position: absolute;
     right: 5px;
-    top: 0;
+    top: 7px;
     display: block;
-    width: 29px;
-    height: 29px;
     outline: none;
 }
 .mg-dialog .mg-footer {

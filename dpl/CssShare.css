@@ -5,6 +5,13 @@ body, html {
 body {
     margin-top: 130px;
 }
+pre {
+    margin: 1em 0px;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 div.section {
     margin: 30px 10px 30px 310px;
 }
