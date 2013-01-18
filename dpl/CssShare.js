@@ -102,4 +102,5 @@ baidu(function(){
     baidu(window).scroll(fixNavPosition).resize(fixNavPosition);
     updateCurrentNav();
     prettyPrint();
+    baidu('a[href=#]').click(function(){return false}); //禁止导航
 });
