@@ -69,7 +69,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="CssShare.css" />
     <link rel="stylesheet" href="../resources/importUnits.php?units=textinput,button,title,dropdown,icon&skins=default" />
-    <link rel="stylesheet" href="../resources/import.php?components=magic.ComboBox,magic.DatePicker,magic.Dialog,magic.Pager,magic.Suggestion,magic.ScrollPanel,&skins=default" />
+    <link rel="stylesheet" href="../resources/import.php?components=magic.Carousel,magic.ComboBox,magic.DatePicker,magic.Dialog,magic.Pager,magic.ScrollPanel,magic.Suggestion,magic.Tooltip,&skins=default" />
     <link rel="stylesheet" href="../resources/units/default/common.css" />
 </head>
 <body>
